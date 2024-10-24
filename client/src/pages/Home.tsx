@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./../assets/react.svg";
 import viteLogo from "/vite.svg";
 import { useMsg } from "../services/queries";
+import { Button } from "@/components/ui/button";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -23,12 +24,9 @@ function Home() {
       </div>
       <h1 className="text-5xl font-semibold">Mono + React</h1>
       <div className="flex gap-12 flex-col items-center">
-        <button
-          className="px-8 w-fit font-semibold py-2 rounded-full text-white bg-blue-600"
-          onClick={() => setCount((count) => count + 1)}
-        >
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p className="text-gray-600 text-l">{data?.msg}</p>
       </div>
     </div>
