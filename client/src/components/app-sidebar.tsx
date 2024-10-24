@@ -65,7 +65,7 @@ const data = {
         },
         {
           title: "Settings",
-          url: "#",
+          url: "/settings",
         },
       ],
     },
